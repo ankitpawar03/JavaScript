@@ -17,7 +17,14 @@ let arr1 = ["item1", "item2"];
 //this is the way to concatenate two arrays and add elements in the array at the same time
 // let arr2 = arr1.slice(0).concat(["item3", "item4"]);
 // or
-let arr2 = arr1.concat(["item3", "item4"]);
+// let arr2 = arr1.concat(["item3", "item4"]);
+
+let arr3 = ["item30", "item44"];
+
+//or by spread operator
+// let arr2 = [...arr1, "item3", "item4"];
+
+let arr2 = [...arr1, ...arr3];
 
 arr1.push("item3");
 
