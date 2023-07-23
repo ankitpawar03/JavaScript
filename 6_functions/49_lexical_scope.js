@@ -12,7 +12,12 @@ function myApp() {
     // this is called lexical scope
   }
 
-  const myFunc2 = () => {};
+  const myFunc2 = () => {
+    const myFunc3 = () => {
+        console.log(myVar);
+    }
+    myFunc3();
+  };
 
   const meFunc3 = () => {};
 
