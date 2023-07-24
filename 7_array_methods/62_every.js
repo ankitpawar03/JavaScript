@@ -15,11 +15,11 @@ const userCart = [
 
     { product: 'laptop', price: 1000, quantity: 1 },
     { product: 'shirt', price: 500, quantity: 2 },
-    { product: 'watch', price: 600, quantity: 1 },
+    { product: 'watch', price: 600, quantity: 0 },
     { product: 'phone', price: 1000, quantity: 1 },
 
 ]
 
-const ans2 = userCart.every((item) => item.price > 1)
+const ans2 = userCart.every((item) => item.price > 550)
 
 console.log(ans2);
